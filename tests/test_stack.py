@@ -13,3 +13,7 @@ class TestStack(unittest.TestCase):
         self.test_stack.push('data1')
         data = self.test_stack.pop()
         self.assertEqual(data, 'data1')
+
+    def test_dunder_str(self):
+        self.top = None
+        assert 'Стек пока что пуст.'
